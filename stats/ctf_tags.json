@@ -1,0 +1,2322 @@
+[
+  {
+    "value": "WEB",
+    "label": "WEB",
+    "children": [
+      {
+        "value": "SQL注入",
+        "label": "SQL注入",
+        "children": [
+          {
+            "value": "POST注入",
+            "label": "POST注入"
+          },
+          {
+            "value": "布尔盲注",
+            "label": "布尔盲注"
+          },
+          {
+            "value": "时间盲注",
+            "label": "时间盲注"
+          },
+          {
+            "value": "报错注入",
+            "label": "报错注入"
+          },
+          {
+            "value": "宽字节注入",
+            "label": "宽字节注入"
+          },
+          {
+            "value": "堆叠注入",
+            "label": "堆叠注入"
+          },
+          {
+            "value": "Insert注入",
+            "label": "Insert注入"
+          },
+          {
+            "value": "Update注入",
+            "label": "Update注入"
+          },
+          {
+            "value": "Cookie注入",
+            "label": "Cookie注入"
+          },
+          {
+            "value": "关键字绕过",
+            "label": "关键字绕过"
+          },
+          {
+            "value": "空格绕过",
+            "label": "空格绕过"
+          },
+          {
+            "value": "字符绕过",
+            "label": "字符绕过"
+          },
+          {
+            "value": "二次注入",
+            "label": "二次注入"
+          },
+          {
+            "value": "无列名注入",
+            "label": "无列名注入"
+          },
+          {
+            "value": "quine注入",
+            "label": "quine注入"
+          },
+          {
+            "value": "unique注入",
+            "label": "unique注入"
+          },
+          {
+            "value": "nosql盲注",
+            "label": "nosql盲注"
+          }
+        ]
+      },
+      {
+        "value": "文件上传",
+        "label": "文件上传",
+        "children": [
+          {
+            "value": "双写后缀",
+            "label": "双写后缀"
+          },
+          {
+            "value": "%00截断",
+            "label": "%00截断"
+          },
+          {
+            "value": ".htaccess",
+            "label": ".htaccess"
+          },
+          {
+            "value": "MIME绕过",
+            "label": "MIME绕过"
+          },
+          {
+            "value": "文件头绕过",
+            "label": "文件头绕过"
+          },
+          {
+            "value": "二次渲染",
+            "label": "二次渲染"
+          },
+          {
+            "value": "条件竞争",
+            "label": "条件竞争"
+          }
+        ]
+      },
+      {
+        "value": "RCE",
+        "label": "RCE",
+        "children": [
+          {
+            "value": "RCE",
+            "label": "RCE"
+          },
+          {
+            "value": "空格绕过",
+            "label": "空格绕过"
+          },
+          {
+            "value": "WAF绕过",
+            "label": "WAF绕过"
+          },
+          {
+            "value": "绕过open_basedir",
+            "label": "绕过open_basedir"
+          },
+          {
+            "value": "无字母RCE",
+            "label": "无字母RCE"
+          },
+          {
+            "value": "无数RCE",
+            "label": "无数RCE"
+          },
+          {
+            "value": "无回显RCE",
+            "label": "无回显RCE"
+          }
+        ]
+      },
+      {
+        "value": "PHP",
+        "label": "PHP",
+        "children": [
+          {
+            "value": "变量覆盖",
+            "label": "变量覆盖"
+          },
+          {
+            "value": "弱比较",
+            "label": "弱比较"
+          },
+          {
+            "value": "PHP伪协议",
+            "label": "PHP伪协议"
+          },
+          {
+            "value": "Smarty",
+            "label": "Smarty"
+          },
+          {
+            "value": "Twig",
+            "label": "Twig"
+          },
+          {
+            "value": "数组绕过",
+            "label": "数组绕过"
+          },
+          {
+            "value": "短标签",
+            "label": "短标签"
+          },
+          {
+            "value": "反序列化",
+            "label": "反序列化"
+          },
+          {
+            "value": "diable_function绕过",
+            "label": "diable_function绕过"
+          },
+          {
+            "value": "无参RCE",
+            "label": "无参RCE"
+          },
+          {
+            "value": "文件包含",
+            "label": "文件包含"
+          },
+          {
+            "value": "正则绕过",
+            "label": "正则绕过"
+          },
+          {
+            "value": "临时文件",
+            "label": "临时文件"
+          },
+          {
+            "value": "Phar反序列化",
+            "label": "Phar反序列化"
+          },
+          {
+            "value": "随机数预测",
+            "label": "随机数预测"
+          },
+          {
+            "value": "Soap",
+            "label": "Soap"
+          },
+          {
+            "value": "字符串逃逸",
+            "label": "字符串逃逸"
+          },
+          {
+            "value": "PCRE",
+            "label": "PCRE"
+          },
+          {
+            "value": "create_function",
+            "label": "create_function"
+          },
+          {
+            "value": "FFI",
+            "label": "FFI"
+          },
+          {
+            "value": "thinkPHP",
+            "label": "thinkPHP"
+          },
+          {
+            "value": "Laravel",
+            "label": "Laravel"
+          },
+          {
+            "value": "pearcmd",
+            "label": "pearcmd"
+          }
+        ]
+      },
+      {
+        "value": "Python",
+        "label": "Python",
+        "children": [
+          {
+            "value": "Flask",
+            "label": "Flask"
+          },
+          {
+            "value": "SSTI",
+            "label": "SSTI"
+          },
+          {
+            "value": "Jinja2",
+            "label": "Jinja2"
+          },
+          {
+            "value": "Cookie伪造",
+            "label": "Cookie伪造"
+          },
+          {
+            "value": "反序列化",
+            "label": "反序列化"
+          },
+          {
+            "value": "Tornado",
+            "label": "Tornado"
+          },
+          {
+            "value": "Django",
+            "label": "Django"
+          },
+          {
+            "value": "DebugRCE",
+            "label": "DebugRCE"
+          },
+          {
+            "value": "沙盒逃逸",
+            "label": "沙盒逃逸"
+          }
+        ]
+      },
+      {
+        "value": "NodeJS",
+        "label": "NodeJS",
+        "children": [
+          {
+            "value": "原型链污染",
+            "label": "原型链污染"
+          },
+          {
+            "value": "字符绕过",
+            "label": "字符绕过"
+          },
+          {
+            "value": "沙盒逃逸",
+            "label": "沙盒逃逸"
+          },
+          {
+            "value": "Ejs",
+            "label": "Ejs"
+          },
+          {
+            "value": "SSTI",
+            "label": "SSTI"
+          },
+          {
+            "value": "IIFE",
+            "label": "IIFE"
+          }
+        ]
+      },
+      {
+        "value": "Java",
+        "label": "Java",
+        "children": [
+          {
+            "value": "JSP",
+            "label": "JSP"
+          },
+          {
+            "value": "Spring",
+            "label": "Spring"
+          },
+          {
+            "value": "shiro",
+            "label": "shiro"
+          },
+          {
+            "value": "Log4j",
+            "label": "Log4j"
+          },
+          {
+            "value": "FastJson",
+            "label": "FastJson"
+          },
+          {
+            "value": "WEB-INF",
+            "label": "WEB-INF"
+          },
+          {
+            "value": "Java反序列化",
+            "label": "Java反序列化"
+          },
+          {
+            "value": "JNDI",
+            "label": "JNDI"
+          },
+          {
+            "value": "Spel",
+            "label": "Spel"
+          }
+        ]
+      },
+      {
+        "value": "XSS",
+        "label": "XSS",
+        "children": [
+          {
+            "value": "XSS",
+            "label": "XSS"
+          },
+          {
+            "value": "CSP",
+            "label": "CSP"
+          },
+          {
+            "value": "CSRF",
+            "label": "CSRF"
+          },
+          {
+            "value": "存储型XSS",
+            "label": "存储型XSS"
+          },
+          {
+            "value": "反射型XSS",
+            "label": "反射型XSS"
+          },
+          {
+            "value": "DOMXSS",
+            "label": "DOMXSS"
+          }
+        ]
+      },
+      {
+        "value": "中间件攻击",
+        "label": "中间件攻击",
+        "children": [
+          {
+            "value": "JWT",
+            "label": "JWT"
+          },
+          {
+            "value": "SSRF",
+            "label": "SSRF"
+          },
+          {
+            "value": "Redis",
+            "label": "Redis"
+          },
+          {
+            "value": "主从复制",
+            "label": "主从复制"
+          },
+          {
+            "value": "XXE",
+            "label": "XXE"
+          },
+          {
+            "value": "XPATH注入",
+            "label": "XPATH注入"
+          },
+          {
+            "value": "GraphQL注入",
+            "label": "GraphQL注入"
+          },
+          {
+            "value": "SQLite",
+            "label": "SQLite"
+          },
+          {
+            "value": "URL污染",
+            "label": "URL污染"
+          },
+          {
+            "value": "DNS污染",
+            "label": "DNS污染"
+          },
+          {
+            "value": "DNS重绑定",
+            "label": "DNS重绑定"
+          },
+          {
+            "value": "HTTP走私",
+            "label": "HTTP走私"
+          },
+          {
+            "value": "Apache",
+            "label": "Apache"
+          },
+          {
+            "value": "Nginx",
+            "label": "Nginx"
+          },
+          {
+            "value": "CRLF",
+            "label": "CRLF"
+          }
+        ]
+      },
+      {
+        "value": "Linux相关",
+        "label": "Linux相关",
+        "children": [
+          {
+            "value": "SE权限",
+            "label": "SE权限"
+          },
+          {
+            "value": "SUID提权",
+            "label": "SUID提权"
+          },
+          {
+            "value": "权限提升",
+            "label": "权限提升"
+          },
+          {
+            "value": "/proc",
+            "label": "/proc"
+          },
+          {
+            "value": "定时任务",
+            "label": "定时任务"
+          },
+          {
+            "value": "Linux命令",
+            "label": "Linux命令"
+          }
+        ]
+      },
+      {
+        "value": "其他",
+        "label": "其他",
+        "children": [
+          {
+            "value": "HTTP协议",
+            "label": "HTTP协议"
+          },
+          {
+            "value": "JS分析",
+            "label": "JS分析"
+          },
+          {
+            "value": "弱口令",
+            "label": "弱口令"
+          },
+          {
+            "value": "目录扫描",
+            "label": "目录扫描"
+          },
+          {
+            "value": "信息收集",
+            "label": "信息收集"
+          },
+          {
+            "value": "目录穿越",
+            "label": "目录穿越"
+          },
+          {
+            "value": "源码泄漏",
+            "label": "源码泄漏"
+          },
+          {
+            "value": ".git泄露",
+            "label": ".git泄露"
+          },
+          {
+            "value": ".svn泄露",
+            "label": ".svn泄露"
+          },
+          {
+            "value": "CVS泄露",
+            "label": "CVS泄露"
+          },
+          {
+            "value": ".ng泄露",
+            "label": ".ng泄露"
+          },
+          {
+            "value": "前端绕过",
+            "label": "前端绕过"
+          },
+          {
+            "value": "vim泄漏",
+            "label": "vim泄漏"
+          },
+          {
+            "value": "代码审计",
+            "label": "代码审计"
+          },
+          {
+            "value": "DNSLOG",
+            "label": "DNSLOG"
+          },
+          {
+            "value": "HTTPLOG",
+            "label": "HTTPLOG"
+          },
+          {
+            "value": "未授权访问",
+            "label": "未授权访问"
+          },
+          {
+            "value": "GOB",
+            "label": "GOB"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "value": "PWN",
+    "label": "PWN",
+    "children": [
+      {
+        "value": "栈",
+        "label": "栈",
+        "children": [
+          {
+            "value": "PIE保护",
+            "label": "PIE保护"
+          },
+          {
+            "value": "shellcode",
+            "label": "shellcode"
+          },
+          {
+            "value": "栈溢出",
+            "label": "栈溢出"
+          },
+          {
+            "value": "整数溢出",
+            "label": "整数溢出"
+          },
+          {
+            "value": "栈迁移",
+            "label": "栈迁移"
+          },
+          {
+            "value": "栈保护",
+            "label": "栈保护"
+          },
+          {
+            "value": "栈对齐",
+            "label": "栈对齐"
+          },
+          {
+            "value": "OneGadget",
+            "label": "OneGadget"
+          },
+          {
+            "value": "StackSmash",
+            "label": "StackSmash"
+          },
+          {
+            "value": "ret2text",
+            "label": "ret2text"
+          },
+          {
+            "value": "ret2libc",
+            "label": "ret2libc"
+          },
+          {
+            "value": "ret2syscall",
+            "label": "ret2syscall"
+          },
+          {
+            "value": "ret2shellcode",
+            "label": "ret2shellcode"
+          },
+          {
+            "value": "ret2csu",
+            "label": "ret2csu"
+          },
+          {
+            "value": "ret2reg",
+            "label": "ret2reg"
+          },
+          {
+            "value": "BlindROP",
+            "label": "BlindROP"
+          },
+          {
+            "value": "ret2dlresolve",
+            "label": "ret2dlresolve"
+          },
+          {
+            "value": "ret2VDSO",
+            "label": "ret2VDSO"
+          },
+          {
+            "value": "SROP",
+            "label": "SROP"
+          }
+        ]
+      },
+      {
+        "value": "IO",
+        "label": "IO",
+        "children": [
+          {
+            "value": "格式化字符串",
+            "label": "格式化字符串"
+          },
+          {
+            "value": "Libc泄漏",
+            "label": "Libc泄漏"
+          },
+          {
+            "value": "ORW",
+            "label": "ORW"
+          }
+        ]
+      },
+      {
+        "value": "堆",
+        "label": "堆",
+        "children": [
+          {
+            "value": "DoubleFree",
+            "label": "DoubleFree"
+          },
+          {
+            "value": "堆风水",
+            "label": "堆风水"
+          },
+          {
+            "value": "OffByOne",
+            "label": "OffByOne"
+          },
+          {
+            "value": "OffByNull",
+            "label": "OffByNull"
+          },
+          {
+            "value": "malloc_hook",
+            "label": "malloc_hook"
+          },
+          {
+            "value": "unlink",
+            "label": "unlink"
+          },
+          {
+            "value": "UAF",
+            "label": "UAF"
+          },
+          {
+            "value": "UnsortedBin",
+            "label": "UnsortedBin"
+          },
+          {
+            "value": "Tacahe",
+            "label": "Tacahe"
+          },
+          {
+            "value": "FastBin",
+            "label": "FastBin"
+          },
+          {
+            "value": "largeBin",
+            "label": "largeBin"
+          },
+          {
+            "value": "HouseOfPig",
+            "label": "HouseOfPig"
+          },
+          {
+            "value": "HouseOfForce",
+            "label": "HouseOfForce"
+          },
+          {
+            "value": "HouseOfLore",
+            "label": "HouseOfLore"
+          },
+          {
+            "value": "HouseOfRabbit",
+            "label": "HouseOfRabbit"
+          },
+          {
+            "value": "HouseOfRoman",
+            "label": "HouseOfRoman"
+          },
+          {
+            "value": "HouseOfEinherjar",
+            "label": "HouseOfEinherjar"
+          }
+        ]
+      },
+      {
+        "value": "IO_FILE",
+        "label": "IO_FILE",
+        "children": [
+          {
+            "value": "IO_FILE",
+            "label": "IO_FILE"
+          },
+          {
+            "value": "伪装IO_FILE",
+            "label": "伪装IO_FILE"
+          },
+          {
+            "value": "FSOP",
+            "label": "FSOP"
+          },
+          {
+            "value": "HouseOfOrange",
+            "label": "HouseOfOrange"
+          }
+        ]
+      },
+      {
+        "value": "其他",
+        "label": "其他",
+        "children": [
+          {
+            "value": "ROPgadget",
+            "label": "ROPgadget"
+          },
+          {
+            "value": "数据结构",
+            "label": "数据结构"
+          },
+          {
+            "value": "gadget",
+            "label": "gadget"
+          },
+          {
+            "value": "PLT改写",
+            "label": "PLT改写"
+          },
+          {
+            "value": "GOT劫持",
+            "label": "GOT劫持"
+          },
+          {
+            "value": "LibcSearcher",
+            "label": "LibcSearcher"
+          },
+          {
+            "value": "自动化路径求解",
+            "label": "自动化路径求解"
+          },
+          {
+            "value": "Angr",
+            "label": "Angr"
+          },
+          {
+            "value": "kernel",
+            "label": "kernel"
+          },
+          {
+            "value": "free_hook劫持",
+            "label": "free_hook劫持"
+          },
+          {
+            "value": "FUZZ",
+            "label": "FUZZ"
+          },
+          {
+            "value": "TOCTOU",
+            "label": "TOCTOU"
+          },
+          {
+            "value": "__malloc_context",
+            "label": "__malloc_context"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "value": "REVERSE",
+    "label": "REVERSE",
+    "children": [
+      {
+        "value": "语言逆向",
+        "label": "语言逆向",
+        "children": [
+          {
+            "value": "Python",
+            "label": "Python"
+          },
+          {
+            "value": "C",
+            "label": "C"
+          },
+          {
+            "value": "C#",
+            "label": "C#"
+          },
+          {
+            "value": "C++",
+            "label": "C++"
+          },
+          {
+            "value": "Rust",
+            "label": "Rust"
+          },
+          {
+            "value": "Ruby",
+            "label": "Ruby"
+          },
+          {
+            "value": "JAVA",
+            "label": "JAVA"
+          },
+          {
+            "value": "PYC",
+            "label": "PYC"
+          },
+          {
+            "value": "Golang",
+            "label": "Golang"
+          },
+          {
+            "value": "WASM",
+            "label": "WASM"
+          },
+          {
+            "value": ".NET",
+            "label": ".NET"
+          },
+          {
+            "value": "ASM",
+            "label": "ASM"
+          },
+          {
+            "value": "bytecode",
+            "label": "bytecode"
+          },
+          {
+            "value": "Risc-V",
+            "label": "Risc-V"
+          },
+          {
+            "value": "ARM",
+            "label": "ARM"
+          },
+          {
+            "value": "MFC",
+            "label": "MFC"
+          }
+        ]
+      },
+      {
+        "value": "算法分析",
+        "label": "算法分析",
+        "children": [
+          {
+            "value": "Base64",
+            "label": "Base64"
+          },
+          {
+            "value": "RC4",
+            "label": "RC4"
+          },
+          {
+            "value": "DFS",
+            "label": "DFS"
+          },
+          {
+            "value": "BFS",
+            "label": "BFS"
+          },
+          {
+            "value": "TEA",
+            "label": "TEA"
+          },
+          {
+            "value": "XTEA",
+            "label": "XTEA"
+          },
+          {
+            "value": "ChaCha20",
+            "label": "ChaCha20"
+          },
+          {
+            "value": "Z3",
+            "label": "Z3"
+          },
+          {
+            "value": "3SAT",
+            "label": "3SAT"
+          },
+          {
+            "value": "XOR",
+            "label": "XOR"
+          },
+          {
+            "value": "迷宫",
+            "label": "迷宫"
+          },
+          {
+            "value": "斐波那契",
+            "label": "斐波那契"
+          },
+          {
+            "value": "自定义逻辑",
+            "label": "自定义逻辑"
+          }
+        ]
+      },
+      {
+        "value": "逆向技术",
+        "label": "逆向技术",
+        "children": [
+          {
+            "value": "SMC",
+            "label": "SMC"
+          },
+          {
+            "value": "脱壳",
+            "label": "脱壳"
+          },
+          {
+            "value": "花指令",
+            "label": "花指令"
+          },
+          {
+            "value": "反调试",
+            "label": "反调试"
+          },
+          {
+            "value": "VM",
+            "label": "VM"
+          },
+          {
+            "value": "VMP",
+            "label": "VMP"
+          },
+          {
+            "value": "VEH",
+            "label": "VEH"
+          },
+          {
+            "value": "动态调试",
+            "label": "动态调试"
+          },
+          {
+            "value": "HOOK",
+            "label": "HOOK"
+          },
+          {
+            "value": "UPX壳",
+            "label": "UPX壳"
+          },
+          {
+            "value": "平坦化",
+            "label": "平坦化"
+          },
+          {
+            "value": "插桩",
+            "label": "插桩"
+          },
+          {
+            "value": "堆栈修复",
+            "label": "堆栈修复"
+          },
+          {
+            "value": "进程保护",
+            "label": "进程保护"
+          },
+          {
+            "value": "控制流",
+            "label": "控制流"
+          },
+          {
+            "value": "ptrace",
+            "label": "ptrace"
+          },
+          {
+            "value": "符号表",
+            "label": "符号表"
+          },
+          {
+            "value": "patch",
+            "label": "patch"
+          },
+          {
+            "value": "中断",
+            "label": "中断"
+          },
+          {
+            "value": "AST",
+            "label": "AST"
+          },
+          {
+            "value": "TLS",
+            "label": "TLS"
+          },
+          {
+            "value": "安卓逆向",
+            "label": "安卓逆向"
+          },
+          {
+            "value": "重定向表",
+            "label": "重定向表"
+          }
+        ]
+      },
+      {
+        "value": "其他",
+        "label": "其他",
+        "children": [
+          {
+            "value": "Ollydbg",
+            "label": "Ollydbg"
+          },
+          {
+            "value": "虚函数表",
+            "label": "虚函数表"
+          },
+          {
+            "value": "大小端序",
+            "label": "大小端序"
+          },
+          {
+            "value": "IDC脚本",
+            "label": "IDC脚本"
+          },
+          {
+            "value": "CheatEngine",
+            "label": "CheatEngine"
+          },
+          {
+            "value": "LLVM",
+            "label": "LLVM"
+          },
+          {
+            "value": "keypatch",
+            "label": "keypatch"
+          },
+          {
+            "value": "GDB",
+            "label": "GDB"
+          },
+          {
+            "value": "固件逆向",
+            "label": "固件逆向"
+          },
+          {
+            "value": "模拟器",
+            "label": "模拟器"
+          },
+          {
+            "value": "PE结构",
+            "label": "PE结构"
+          },
+          {
+            "value": "Angr",
+            "label": "Angr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "value": "CRYPTO",
+    "label": "CRYPTO",
+    "children": [
+      {
+        "value": "流密码",
+        "label": "流密码",
+        "children": [
+          {
+            "value": "伪随机",
+            "label": "伪随机"
+          },
+          {
+            "value": "随机数预测",
+            "label": "随机数预测"
+          },
+          {
+            "value": "MT19937",
+            "label": "MT19937"
+          },
+          {
+            "value": "LCG",
+            "label": "LCG"
+          },
+          {
+            "value": "LFSR",
+            "label": "LFSR"
+          },
+          {
+            "value": "B-M算法",
+            "label": "B-M算法"
+          },
+          {
+            "value": "RC4",
+            "label": "RC4"
+          },
+          {
+            "value": "RC6",
+            "label": "RC6"
+          }
+        ]
+      },
+      {
+        "value": "RSA",
+        "label": "RSA",
+        "children": [
+          {
+            "value": "素数分解",
+            "label": "素数分解"
+          },
+          {
+            "value": "Rabin",
+            "label": "Rabin"
+          },
+          {
+            "value": "p-q过小",
+            "label": "p-q过小"
+          },
+          {
+            "value": "dp泄露",
+            "label": "dp泄露"
+          },
+          {
+            "value": "p-1光滑",
+            "label": "p-1光滑"
+          },
+          {
+            "value": "共享素数",
+            "label": "共享素数"
+          },
+          {
+            "value": "p+1光滑",
+            "label": "p+1光滑"
+          },
+          {
+            "value": "低加密指数攻击",
+            "label": "低加密指数攻击"
+          },
+          {
+            "value": "小明文攻击",
+            "label": "小明文攻击"
+          },
+          {
+            "value": "CopperSmith",
+            "label": "CopperSmith"
+          },
+          {
+            "value": "不互素",
+            "label": "不互素"
+          },
+          {
+            "value": "AMM",
+            "label": "AMM"
+          },
+          {
+            "value": "共模攻击",
+            "label": "共模攻击"
+          },
+          {
+            "value": "维纳攻击",
+            "label": "维纳攻击"
+          },
+          {
+            "value": "d泄露攻击",
+            "label": "d泄露攻击"
+          },
+          {
+            "value": "广播攻击",
+            "label": "广播攻击"
+          },
+          {
+            "value": "扩展维纳攻击",
+            "label": "扩展维纳攻击"
+          },
+          {
+            "value": "已知p低位",
+            "label": "已知p低位"
+          }
+        ]
+      },
+      {
+        "value": "古典密码",
+        "label": "古典密码",
+        "children": [
+          {
+            "value": "ROT",
+            "label": "ROT"
+          },
+          {
+            "value": "栅栏密码",
+            "label": "栅栏密码"
+          },
+          {
+            "value": "仿射密码",
+            "label": "仿射密码"
+          },
+          {
+            "value": "凯撒密码",
+            "label": "凯撒密码"
+          },
+          {
+            "value": "乘法密码",
+            "label": "乘法密码"
+          },
+          {
+            "value": "Atbash",
+            "label": "Atbash"
+          },
+          {
+            "value": "维吉尼亚",
+            "label": "维吉尼亚"
+          },
+          {
+            "value": "词频分析",
+            "label": "词频分析"
+          },
+          {
+            "value": "字频统计",
+            "label": "字频统计"
+          },
+          {
+            "value": "Base家族",
+            "label": "Base家族"
+          },
+          {
+            "value": "HILL密码",
+            "label": "HILL密码"
+          },
+          {
+            "value": "摩斯代码",
+            "label": "摩斯代码"
+          },
+          {
+            "value": "ADFGX密码",
+            "label": "ADFGX密码"
+          }
+        ]
+      },
+      {
+        "value": "分组密码",
+        "label": "分组密码",
+        "children": [
+          {
+            "value": "CBC",
+            "label": "CBC"
+          },
+          {
+            "value": "ECB",
+            "label": "ECB"
+          },
+          {
+            "value": "OFB",
+            "label": "OFB"
+          },
+          {
+            "value": "GCM",
+            "label": "GCM"
+          },
+          {
+            "value": "尾字节爆破",
+            "label": "尾字节爆破"
+          },
+          {
+            "value": "字节反转攻击",
+            "label": "字节反转攻击"
+          },
+          {
+            "value": "预言填充攻击",
+            "label": "预言填充攻击"
+          }
+        ]
+      },
+      {
+        "value": "块加密",
+        "label": "块加密",
+        "children": [
+          {
+            "value": "Feistel",
+            "label": "Feistel"
+          },
+          {
+            "value": "DES",
+            "label": "DES"
+          },
+          {
+            "value": "3DES",
+            "label": "3DES"
+          },
+          {
+            "value": "AES",
+            "label": "AES"
+          },
+          {
+            "value": "子密钥泄漏",
+            "label": "子密钥泄漏"
+          }
+        ]
+      },
+      {
+        "value": "非对称密码",
+        "label": "非对称密码",
+        "children": [
+          {
+            "value": "格密码",
+            "label": "格密码"
+          },
+          {
+            "value": "DSA",
+            "label": "DSA"
+          },
+          {
+            "value": "已知K攻击",
+            "label": "已知K攻击"
+          },
+          {
+            "value": "K共享攻击",
+            "label": "K共享攻击"
+          },
+          {
+            "value": "线性K攻击",
+            "label": "线性K攻击"
+          },
+          {
+            "value": "证书格式",
+            "label": "证书格式"
+          },
+          {
+            "value": "PEM",
+            "label": "PEM"
+          },
+          {
+            "value": "DER",
+            "label": "DER"
+          },
+          {
+            "value": "PKCS",
+            "label": "PKCS"
+          },
+          {
+            "value": "ECC",
+            "label": "ECC"
+          },
+          {
+            "value": "ECDSA",
+            "label": "ECDSA"
+          },
+          {
+            "value": "ElGamal",
+            "label": "ElGamal"
+          },
+          {
+            "value": "LSB攻击",
+            "label": "LSB攻击"
+          },
+          {
+            "value": "SchmidtSamoa",
+            "label": "SchmidtSamoa"
+          },
+          {
+            "value": "背包密码",
+            "label": "背包密码"
+          },
+          {
+            "value": "选择明文攻击",
+            "label": "选择明文攻击"
+          },
+          {
+            "value": "PohligHellman",
+            "label": "PohligHellman"
+          }
+        ]
+      },
+      {
+        "value": "格相关",
+        "label": "格相关",
+        "children": [
+          {
+            "value": "LWE",
+            "label": "LWE"
+          },
+          {
+            "value": "HNP",
+            "label": "HNP"
+          },
+          {
+            "value": "RLWE",
+            "label": "RLWE"
+          },
+          {
+            "value": "NTRU",
+            "label": "NTRU"
+          },
+          {
+            "value": "SVP",
+            "label": "SVP"
+          },
+          {
+            "value": "CVP",
+            "label": "CVP"
+          },
+          {
+            "value": "格基规约",
+            "label": "格基规约"
+          },
+          {
+            "value": "高斯消元",
+            "label": "高斯消元"
+          },
+          {
+            "value": "CSIDH",
+            "label": "CSIDH"
+          },
+          {
+            "value": "SIDH",
+            "label": "SIDH"
+          },
+          {
+            "value": "Groebner Basis",
+            "label": "Groebner Basis"
+          }
+        ]
+      },
+      {
+        "value": "HASH算法",
+        "label": "HASH算法",
+        "children": [
+          {
+            "value": "HMAC",
+            "label": "HMAC"
+          },
+          {
+            "value": "MD5爆破",
+            "label": "MD5爆破"
+          },
+          {
+            "value": "Hash爆破",
+            "label": "Hash爆破"
+          },
+          {
+            "value": "哈希长度扩展攻击",
+            "label": "哈希长度扩展攻击"
+          }
+        ]
+      },
+      {
+        "value": "国密算法",
+        "label": "国密算法",
+        "children": [
+          {
+            "value": "SM2",
+            "label": "SM2"
+          },
+          {
+            "value": "SM3",
+            "label": "SM3"
+          },
+          {
+            "value": "SM4",
+            "label": "SM4"
+          }
+        ]
+      },
+      {
+        "value": "其他",
+        "label": "其他",
+        "children": [
+          {
+            "value": "费马小定理",
+            "label": "费马小定理"
+          },
+          {
+            "value": "连分数",
+            "label": "连分数"
+          },
+          {
+            "value": "CRT",
+            "label": "CRT"
+          },
+          {
+            "value": "OPT",
+            "label": "OPT"
+          },
+          {
+            "value": "BSGS",
+            "label": "BSGS"
+          },
+          {
+            "value": "离散对数",
+            "label": "离散对数"
+          },
+          {
+            "value": "二次剩余",
+            "label": "二次剩余"
+          },
+          {
+            "value": "线性代数",
+            "label": "线性代数"
+          },
+          {
+            "value": "威尔逊定理",
+            "label": "威尔逊定理"
+          },
+          {
+            "value": "矩阵",
+            "label": "矩阵"
+          },
+          {
+            "value": "逆元",
+            "label": "逆元"
+          },
+          {
+            "value": "群环域",
+            "label": "群环域"
+          },
+          {
+            "value": "公因数",
+            "label": "公因数"
+          },
+          {
+            "value": "欧拉定理",
+            "label": "欧拉定理"
+          },
+          {
+            "value": "欧拉函数",
+            "label": "欧拉函数"
+          },
+          {
+            "value": "欧拉准则",
+            "label": "欧拉准则"
+          },
+          {
+            "value": "扩展欧几里得",
+            "label": "扩展欧几里得"
+          },
+          {
+            "value": "矩阵快速幂",
+            "label": "矩阵快速幂"
+          },
+          {
+            "value": "二项式定理",
+            "label": "二项式定理"
+          },
+          {
+            "value": "MITM",
+            "label": "MITM"
+          },
+          {
+            "value": "侧信道",
+            "label": "侧信道"
+          },
+          {
+            "value": "二分",
+            "label": "二分"
+          },
+          {
+            "value": "HenselLifting",
+            "label": "HenselLifting"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "value": "MISC",
+    "label": "MISC",
+    "children": [
+      {
+        "value": "图片隐写",
+        "label": "图片隐写",
+        "children": [
+          {
+            "value": "宽高修改",
+            "label": "宽高修改"
+          },
+          {
+            "value": "图片隐写",
+            "label": "图片隐写"
+          },
+          {
+            "value": "LSB",
+            "label": "LSB"
+          },
+          {
+            "value": "EXIF",
+            "label": "EXIF"
+          },
+          {
+            "value": "GIF提取",
+            "label": "GIF提取"
+          },
+          {
+            "value": "盲水印",
+            "label": "盲水印"
+          },
+          {
+            "value": "汉信码",
+            "label": "汉信码"
+          },
+          {
+            "value": "像素处理",
+            "label": "像素处理"
+          },
+          {
+            "value": "图片分离",
+            "label": "图片分离"
+          },
+          {
+            "value": "光栅图片",
+            "label": "光栅图片"
+          },
+          {
+            "value": "IDAT隐写",
+            "label": "IDAT隐写"
+          },
+          {
+            "value": "图片修复",
+            "label": "图片修复"
+          },
+          {
+            "value": "Arnold",
+            "label": "Arnold"
+          },
+          {
+            "value": "Steghide",
+            "label": "Steghide"
+          },
+          {
+            "value": "Silenteye",
+            "label": "Silenteye"
+          },
+          {
+            "value": "Outguess",
+            "label": "Outguess"
+          },
+          {
+            "value": "APNG",
+            "label": "APNG"
+          },
+          {
+            "value": "EZStego",
+            "label": "EZStego"
+          },
+          {
+            "value": "二维码",
+            "label": "二维码"
+          },
+          {
+            "value": "SSTV",
+            "label": "SSTV"
+          }
+        ]
+      },
+      {
+        "value": "音视频隐写",
+        "label": "音视频隐写",
+        "children": [
+          {
+            "value": "波形图隐写",
+            "label": "波形图隐写"
+          },
+          {
+            "value": "频谱图隐写",
+            "label": "频谱图隐写"
+          },
+          {
+            "value": "音频差分",
+            "label": "音频差分"
+          },
+          {
+            "value": "DTMF",
+            "label": "DTMF"
+          },
+          {
+            "value": "DeepSound",
+            "label": "DeepSound"
+          },
+          {
+            "value": "电话音",
+            "label": "电话音"
+          },
+          {
+            "value": "StegoVideo",
+            "label": "StegoVideo"
+          }
+        ]
+      },
+      {
+        "value": "编码分析",
+        "label": "编码分析",
+        "children": [
+          {
+            "value": "Aaencode",
+            "label": "Aaencode"
+          },
+          {
+            "value": "Uuencode",
+            "label": "Uuencode"
+          },
+          {
+            "value": "阴阳怪气加密",
+            "label": "阴阳怪气加密"
+          },
+          {
+            "value": "社会核心价值观",
+            "label": "社会核心价值观"
+          },
+          {
+            "value": "IEEE754",
+            "label": "IEEE754"
+          },
+          {
+            "value": "JSFu*k",
+            "label": "JSFu*k"
+          },
+          {
+            "value": "ASCII",
+            "label": "ASCII"
+          },
+          {
+            "value": "Ook",
+            "label": "Ook"
+          },
+          {
+            "value": "Rabbit",
+            "label": "Rabbit"
+          },
+          {
+            "value": "BrainFu*k",
+            "label": "BrainFu*k"
+          },
+          {
+            "value": "emoji",
+            "label": "emoji"
+          },
+          {
+            "value": "字符编码",
+            "label": "字符编码"
+          },
+          {
+            "value": "whitespace编程",
+            "label": "whitespace编程"
+          },
+          {
+            "value": "Braille盲文",
+            "label": "Braille盲文"
+          },
+          {
+            "value": "跳舞的小人",
+            "label": "跳舞的小人"
+          },
+          {
+            "value": "与佛论禅",
+            "label": "与佛论禅"
+          },
+          {
+            "value": "猪圈密码",
+            "label": "猪圈密码"
+          },
+          {
+            "value": "当铺密码",
+            "label": "当铺密码"
+          },
+          {
+            "value": "键盘密码",
+            "label": "键盘密码"
+          },
+          {
+            "value": "云隐密码",
+            "label": "云隐密码"
+          },
+          {
+            "value": "代码混淆",
+            "label": "代码混淆"
+          }
+        ]
+      },
+      {
+        "value": "压缩包分析",
+        "label": "压缩包分析",
+        "children": [
+          {
+            "value": "伪加密",
+            "label": "伪加密"
+          },
+          {
+            "value": "密码爆破",
+            "label": "密码爆破"
+          },
+          {
+            "value": "掩码攻击",
+            "label": "掩码攻击"
+          },
+          {
+            "value": "CRC爆破",
+            "label": "CRC爆破"
+          },
+          {
+            "value": "明文攻击",
+            "label": "明文攻击"
+          }
+        ]
+      },
+      {
+        "value": "文档隐写",
+        "label": "文档隐写",
+        "children": [
+          {
+            "value": "word隐写",
+            "label": "word隐写"
+          },
+          {
+            "value": "word文件格式",
+            "label": "word文件格式"
+          },
+          {
+            "value": "PDF隐写",
+            "label": "PDF隐写"
+          },
+          {
+            "value": "零宽隐写",
+            "label": "零宽隐写"
+          },
+          {
+            "value": "ttf隐写",
+            "label": "ttf隐写"
+          },
+          {
+            "value": "office文档破解",
+            "label": "office文档破解"
+          },
+          {
+            "value": "wbStego",
+            "label": "wbStego"
+          }
+        ]
+      },
+      {
+        "value": "流量分析",
+        "label": "流量分析",
+        "children": [
+          {
+            "value": "日志审计",
+            "label": "日志审计"
+          },
+          {
+            "value": "USB协议",
+            "label": "USB协议"
+          },
+          {
+            "value": "鼠标流量",
+            "label": "鼠标流量"
+          },
+          {
+            "value": "键盘流量",
+            "label": "键盘流量"
+          },
+          {
+            "value": "ICMP",
+            "label": "ICMP"
+          },
+          {
+            "value": "TLS流量",
+            "label": "TLS流量"
+          },
+          {
+            "value": "Webshell流量",
+            "label": "Webshell流量"
+          },
+          {
+            "value": "混淆流量",
+            "label": "混淆流量"
+          },
+          {
+            "value": "Wifi流量",
+            "label": "Wifi流量"
+          },
+          {
+            "value": "Aircrack",
+            "label": "Aircrack"
+          },
+          {
+            "value": "数位板流量",
+            "label": "数位板流量"
+          },
+          {
+            "value": "IPMI协议",
+            "label": "IPMI协议"
+          },
+          {
+            "value": "VMESS",
+            "label": "VMESS"
+          }
+        ]
+      },
+      {
+        "value": "电子取证",
+        "label": "电子取证",
+        "children": [
+          {
+            "value": "内存取证",
+            "label": "内存取证"
+          },
+          {
+            "value": "磁盘取证",
+            "label": "磁盘取证"
+          },
+          {
+            "value": "数据恢复",
+            "label": "数据恢复"
+          },
+          {
+            "value": "注册表",
+            "label": "注册表"
+          },
+          {
+            "value": "firepwd",
+            "label": "firepwd"
+          },
+          {
+            "value": "LSA",
+            "label": "LSA"
+          },
+          {
+            "value": "VeraCrypt",
+            "label": "VeraCrypt"
+          },
+          {
+            "value": "NTFS",
+            "label": "NTFS"
+          },
+          {
+            "value": "EXT",
+            "label": "EXT"
+          },
+          {
+            "value": "GPG",
+            "label": "GPG"
+          },
+          {
+            "value": "微信取证",
+            "label": "微信取证"
+          },
+          {
+            "value": "虚拟磁盘",
+            "label": "虚拟磁盘"
+          },
+          {
+            "value": "行为分析",
+            "label": "行为分析"
+          },
+          {
+            "value": "数据库取证",
+            "label": "数据库取证"
+          },
+          {
+            "value": "mimakatz",
+            "label": "mimakatz"
+          },
+          {
+            "value": "手机取证",
+            "label": "手机取证"
+          },
+          {
+            "value": "手环取证",
+            "label": "手环取证"
+          }
+        ]
+      },
+      {
+        "value": "工业控制",
+        "label": "工业控制",
+        "children": [
+          {
+            "value": "PLC",
+            "label": "PLC"
+          },
+          {
+            "value": "仿真",
+            "label": "仿真"
+          },
+          {
+            "value": "modbus",
+            "label": "modbus"
+          },
+          {
+            "value": "工控流量",
+            "label": "工控流量"
+          },
+          {
+            "value": "RFCOMM协议",
+            "label": "RFCOMM协议"
+          },
+          {
+            "value": "UDS诊断协议",
+            "label": "UDS诊断协议"
+          },
+          {
+            "value": "智能车协议",
+            "label": "智能车协议"
+          }
+        ]
+      },
+      {
+        "value": "JAIL",
+        "label": "JAIL",
+        "children": [
+          {
+            "value": "沙盒逃逸",
+            "label": "沙盒逃逸"
+          },
+          {
+            "value": "SE权限",
+            "label": "SE权限"
+          },
+          {
+            "value": "SUID提权",
+            "label": "SUID提权"
+          },
+          {
+            "value": "权限提升",
+            "label": "权限提升"
+          },
+          {
+            "value": "/proc",
+            "label": "/proc"
+          },
+          {
+            "value": "定时任务",
+            "label": "定时任务"
+          },
+          {
+            "value": "Linux命令",
+            "label": "Linux命令"
+          }
+        ]
+      },
+      {
+        "value": "其他",
+        "label": "其他",
+        "children": [
+          {
+            "value": "OSINT",
+            "label": "OSINT"
+          },
+          {
+            "value": "文件结构",
+            "label": "文件结构"
+          },
+          {
+            "value": "Pyc隐写",
+            "label": "Pyc隐写"
+          },
+          {
+            "value": "NTFS隐写",
+            "label": "NTFS隐写"
+          },
+          {
+            "value": "脚本编写",
+            "label": "脚本编写"
+          },
+          {
+            "value": "PDU",
+            "label": "PDU"
+          },
+          {
+            "value": "坦纳图",
+            "label": "坦纳图"
+          },
+          {
+            "value": "数字电路",
+            "label": "数字电路"
+          },
+          {
+            "value": "LDPC",
+            "label": "LDPC"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "value": "ETH",
+    "label": "ETH",
+    "children": [
+      {
+        "value": "智能合约",
+        "label": "智能合约",
+        "children": [
+          {
+            "value": "EVM",
+            "label": "EVM"
+          },
+          {
+            "value": "Solidity",
+            "label": "Solidity"
+          },
+          {
+            "value": "合约地址预测",
+            "label": "合约地址预测"
+          },
+          {
+            "value": "Storage",
+            "label": "Storage"
+          }
+        ]
+      },
+      {
+        "value": "区块链",
+        "label": "区块链",
+        "children": [
+          {
+            "value": "区块链",
+            "label": "区块链"
+          },
+          {
+            "value": "Ed25519",
+            "label": "Ed25519"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "value": "AI",
+    "label": "AI",
+    "children": [
+      {
+        "value": "AI",
+        "label": "AI",
+        "children": [
+          {
+            "value": "KNN",
+            "label": "KNN"
+          },
+          {
+            "value": "PyTorch",
+            "label": "PyTorch"
+          },
+          {
+            "value": "TensorFlow",
+            "label": "TensorFlow"
+          },
+          {
+            "value": "Transform",
+            "label": "Transform"
+          },
+          {
+            "value": "神经网络",
+            "label": "神经网络"
+          },
+          {
+            "value": "病态矩阵",
+            "label": "病态矩阵"
+          },
+          {
+            "value": "梯度泄露攻击",
+            "label": "梯度泄露攻击"
+          },
+          {
+            "value": "AutoEncoder",
+            "label": "AutoEncoder"
+          },
+          {
+            "value": "搜索",
+            "label": "搜索"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "value": "其他",
+    "label": "其他",
+    "children": [
+      {
+        "value": "CVE",
+        "label": "CVE",
+        "children": [
+          {
+            "value": "CVE-2007-4559",
+            "label": "CVE-2007-4559"
+          },
+          {
+            "value": "CVE-2010-2967",
+            "label": "CVE-2010-2967"
+          },
+          {
+            "value": "CVE-2013-4786",
+            "label": "CVE-2013-4786"
+          },
+          {
+            "value": "CVE-2016-7124",
+            "label": "CVE-2016-7124"
+          },
+          {
+            "value": "CVE-2017-15715",
+            "label": "CVE-2017-15715"
+          },
+          {
+            "value": "CVE-2019-11834",
+            "label": "CVE-2019-11834"
+          },
+          {
+            "value": "CVE-2019-11835",
+            "label": "CVE-2019-11835"
+          },
+          {
+            "value": "CVE-2020-1938",
+            "label": "CVE-2020-1938"
+          },
+          {
+            "value": "CVE-2020-7066",
+            "label": "CVE-2020-7066"
+          },
+          {
+            "value": "CVE-2020-28483",
+            "label": "CVE-2020-28483"
+          },
+          {
+            "value": "CVE-2021-36794",
+            "label": "CVE-2021-36794"
+          },
+          {
+            "value": "CVE-2021-41773",
+            "label": "CVE-2021-41773"
+          },
+          {
+            "value": "CVE-2021-44228",
+            "label": "CVE-2021-44228"
+          },
+          {
+            "value": "CVE-2021-43798",
+            "label": "CVE-2021-43798"
+          },
+          {
+            "value": "CVE-2022-0760",
+            "label": "CVE-2022-0760"
+          },
+          {
+            "value": "CVE-2022-1292",
+            "label": "CVE-2022-1292"
+          }
+        ]
+      },
+      {
+        "value": "CNVD",
+        "label": "CNVD",
+        "children": [
+          {
+            "value": "CNVD-2022-06422",
+            "label": "CNVD-2022-06422"
+          }
+        ]
+      },
+      {
+        "value": "靶场",
+        "label": "靶场",
+        "children": [
+          {
+            "value": "综合靶场",
+            "label": "综合靶场"
+          },
+          {
+            "value": "域渗透",
+            "label": "域渗透"
+          }
+        ]
+      }
+    ]
+  }
+]
