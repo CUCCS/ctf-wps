@@ -26,20 +26,20 @@
 
 1. 反汇编vuln文件，直接F5生成伪C代码
 
-![[HGAME 2023 week1]test_nc-F5](./images/[HGAME 2023 week1]test_nc-F5.png)
+![\[HGAME 2023 week1]test_nc-F5](./images/\[HGAME 2023 week1]test_nc-F5.png)
 
 2. 分析代码，很简单，直接系统调用启动sh终端
 3. 那就直接nc试试，发现题目真的很实诚地直接能调用终端
 
-![[HGAME 2023 week1]test_nc-test](./images/[HGAME 2023 week1]test_nc-test.png)
+![\[HGAME 2023 week1]test_nc-test](./images/\[HGAME 2023 week1]test_nc-test.png)
 
 4. 遍历目录，直接找到flag
 
-![[HGAME 2023 week1]test_nc-ls](./images/[HGAME 2023 week1]test_nc-ls.png)
+![\[HGAME 2023 week1]test_nc-ls](./images/\[HGAME 2023 week1]test_nc-ls.png)
 
 4. 直接打印获得flag
 
-![[HGAME 2023 week1]test_nc-](./images/[HGAME 2023 week1]test_nc-flag.png)
+![\[HGAME 2023 week1]test_nc-](./images/\[HGAME 2023 week1]test_nc-flag.png)
 
 ## 四、总结与反思
 

@@ -4,7 +4,7 @@
 - 题目链接： https://www.nssctf.cn/problem/1996
 - 考点清单： 简单逆向, C语言, 任意语言编程
 - 工具清单： IDA pro
-- payloads： ./payload/[WUSTCTF 2020]level1-list.py
+- payloads： ./payload/\[WUSTCTF 2020]level1-list.py
 
 ## 一、看到什么
 
@@ -26,7 +26,7 @@
 
 1. 使用IDA pro打开level1，尝试解读代码
 
-![[WUSTCTF 2020]level1-ida_1.png](./images/[WUSTCTF 2020]level1-ida_1.png)
+![\[WUSTCTF 2020]level1-ida_1.png](./images/\[WUSTCTF 2020]level1-ida_1.png)
 
 2. 发现程序流较为复杂，循环、分支结构均有涉及，手动分析较困难
 
@@ -34,7 +34,7 @@
 
 1. 尝试直接F5生成伪c代码，发现其实很简单，程序流很清晰
 
-![[WUSTCTF 2020]level1-F5](./images/[WUSTCTF 2020]level1-F5.png)
+![\[WUSTCTF 2020]level1-F5](./images/\[WUSTCTF 2020]level1-F5.png)
 
 2. 理解逻辑，发现字眼`flag`，9-11行程序在`flag`文件里读了字符串，该字符串很可能就是flag；12行循环初步猜测字符串长度为19；14行做奇偶判断，奇数位左移i，偶数位乘以i，并逐行输出。output文件恰有19行，印证了之前的思路2
 
