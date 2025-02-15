@@ -12,11 +12,11 @@
 
 1. nc连一下容器，输入测试数据无回显
 
-![\[SWPUCTF 2022 新生赛]FindanotherWay-hello](images/[SWPUCTF 2022 新生赛]FindanotherWay-hello.png)
+![](images/[SWPUCTF 2022 新生赛]FindanotherWay-hello.png)
 
 1. 二进制文件FindanotherWay，用gdb打开，看到以下函数
 
-![\[SWPUCTF 2022 新生赛]FindanotherWay-func](images/[SWPUCTF 2022 新生赛]FindanotherWay-func.png)
+![](images/[SWPUCTF 2022 新生赛]FindanotherWay-func.png)
 
 ## 二、想到什么解题思路
 
@@ -31,41 +31,41 @@
 
 1. 反汇编`youfindit`函数，发现一个系统调用
 
-![\[SWPUCTF 2022 新生赛]FindanotherWay-disas_youfindit](images/[SWPUCTF 2022 新生赛]FindanotherWay-disas_youfindit.png)
+![](images/[SWPUCTF 2022 新生赛]FindanotherWay-disas_youfindit.png)
 
 2. 打印几个常量看看是什么，发现直接开终端，确定该函数用于攻击代码执行
 
-![\[SWPUCTF 2022 新生赛]FindanotherWay-strings](images/[SWPUCTF 2022 新生赛]FindanotherWay-strings.png)
+![](images/[SWPUCTF 2022 新生赛]FindanotherWay-strings.png)
 
 3. 查看nss函数，发现是一堆puts，应该是之前看到的欢迎语
 
-![\[SWPUCTF 2022 新生赛]FindanotherWay-disas_nss](images/[SWPUCTF 2022 新生赛]FindanotherWay-disas_nss.png)
+![](images/[SWPUCTF 2022 新生赛]FindanotherWay-disas_nss.png)
 
 3. 查看vuln函数，发现漏洞点gets函数，可以用于执行缓冲区溢出
 
-![\[SWPUCTF 2022 新生赛]FindanotherWay-disas_vuln](images/[SWPUCTF 2022 新生赛]FindanotherWay-disas_vuln.png)
+![](images/[SWPUCTF 2022 新生赛]FindanotherWay-disas_vuln.png)
 
 4. 查看主函数，寻找有关上述两个函数的调用，发现对漏洞函数的调用
 
-![\[SWPUCTF 2022 新生赛]FindanotherWay-disas_main](images/[SWPUCTF 2022 新生赛]FindanotherWay-disas_main.png)
+![](images/[SWPUCTF 2022 新生赛]FindanotherWay-disas_main.png)
 
 5. 已经确认攻击方式为栈溢出，打断点、定义hook用以查看状态，动态调试
 
-![\[SWPUCTF 2022 新生赛]FindanotherWay-debug_1](images/[SWPUCTF 2022 新生赛]FindanotherWay-debug_1.png)
+![](images/[SWPUCTF 2022 新生赛]FindanotherWay-debug_1.png)
 
 这里对于rsp栈帧后的监视稍微短了点，10wx长度更合理，补充查看
 
-![\[SWPUCTF 2022 新生赛]FindanotherWay-debug_2](images/[SWPUCTF 2022 新生赛]FindanotherWay-debug_2.png)
+![](images/[SWPUCTF 2022 新生赛]FindanotherWay-debug_2.png)
 
 发现函数返回点
 
-![\[SWPUCTF 2022 新生赛]FindanotherWay-ret](images/[SWPUCTF 2022 新生赛]FindanotherWay-ret.png)
+![](images/[SWPUCTF 2022 新生赛]FindanotherWay-ret.png)
 
 继续执行，输入测试数据AAAAAAAA，发现gets函数读取的数据从地址e018处开始存储
 
 6. 计算padding：5x4=20个字符；跳转目标0x00401250，可以直接运行系统调用，拿到shell
 
-![\[SWPUCTF 2022 新生赛]FindanotherWay-padding](images/[SWPUCTF 2022 新生赛]FindanotherWay-padding.png)
+![](images/[SWPUCTF 2022 新生赛]FindanotherWay-padding.png)
 
 6. 构造payload
 
@@ -82,11 +82,11 @@ p.interactive()
 
 7. 运行，成功获得shell
 
-![\[SWPUCTF 2022 新生赛]FindanotherWay-shell](images/[SWPUCTF 2022 新生赛]FindanotherWay-shell.png)
+![](images/[SWPUCTF 2022 新生赛]FindanotherWay-shell.png)
 
 8. 寻找flag，ls直接看到有flag
 
-![\[SWPUCTF 2022 新生赛]FindanotherWay-flag](images/[SWPUCTF 2022 新生赛]FindanotherWay-flag.png)
+![](images/[SWPUCTF 2022 新生赛]FindanotherWay-flag.png)
 
 ## 四、总结与反思
 
@@ -199,11 +199,11 @@ print("Offset is:", offset)
 
 实际栈内的操作是这样的：
 
-![\[SWPUCTF 2022 新生赛]FindanotherWay-graph](images/[SWPUCTF 2022 新生赛]FindanotherWay-graph.png)
+![](images/[SWPUCTF 2022 新生赛]FindanotherWay-graph.png)
 
 给`gets`函数再加上一个ret也可以成功跳转，不过变相的将栈拉长了
 
-![\[SWPUCTF 2022 新生赛]FindanotherWay-graph](images/[SWPUCTF 2022 新生赛]FindanotherWay-graph2.png)
+![](images/[SWPUCTF 2022 新生赛]FindanotherWay-graph2.png)
 
 ## 五、本地工具环境配置
 
