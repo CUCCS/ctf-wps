@@ -122,7 +122,8 @@
         $phar -> stopBuffering();
         ?>
     ```
-    ![](images/[SWPUCTF%202021%20新生赛]babyunser-php.png)
+
+   ![](images/[SWPUCTF%202021%20新生赛]babyunser-php.png)
 
 11. 上传`phar`文件。并获取文件路径`upload/6d2151e639ecf66fd66d1b8c51c78c12.txt`。
  
