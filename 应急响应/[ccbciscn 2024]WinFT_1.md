@@ -1,6 +1,6 @@
 ## [ccbciscn 2024]WinFT_1 https://github.com/CTF-Archives/2024-ccbciscn/tree/main 
 
-* 考点：电脑取证，网络连接
+* 考点：电子取证，网络连接
 * 工具：netstat
 
 题目信息如下：

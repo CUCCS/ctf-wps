@@ -1,6 +1,6 @@
 ## [ccbciscn 2024]WinFT_2 https://github.com/CTF-Archives/2024-ccbciscn/tree/main 
 
-* 考点：电脑取证，应急响应，base64
+* 考点：电子取证，应急响应，base64
 * 工具：无
 
 题目信息如下：
