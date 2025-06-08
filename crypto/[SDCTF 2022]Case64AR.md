@@ -43,7 +43,7 @@ for i in range(64):
     except:
         pass
 ```
-解密结果如下：
+解密结果如下：<br>
 ![alt text](./image/Case64AR.png)
 
 ## 四、总结与反思
