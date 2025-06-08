@@ -72,11 +72,11 @@ while True:
 
     ip += 1
 ```
-![alt text](./image/什锦-brainfuck解码.png)
+![alt text](./image/什锦-brainfuck解码.png)<br>
 一般来说数个五位数一起排列可以猜测是ascii码转中文字符
 
-使用随波逐流直接找到Unicode转ascii码直接解密即可
-![alt text](./image/什锦-ascii码转中文.png)
+使用随波逐流直接找到Unicode转ascii码直接解密即可<br>
+![alt text](./image/什锦-ascii码转中文.png)<br>
 
 最终将CodeABC连接起来进行MD5加密即可。
 
