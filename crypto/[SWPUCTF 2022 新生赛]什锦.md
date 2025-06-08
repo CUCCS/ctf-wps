@@ -16,26 +16,26 @@ CodeB=Decode(CodeB.png)
 CodeC=Decode(CodeC.txt)
 **flag=MD5(CodeA+CodeB+CodeC)**
 
-* CodeB：
-  ![alt text](./image/什锦-codeB.png)
-* CodeC：
-  ![alt text](./image/什锦-codeC.png)
+* CodeB：<br>
+  ![alt text](./image/什锦-codeB.png)<br>
+* CodeC：<br>
+  ![alt text](./image/什锦-codeC.png)<br>
 ## 二、解题思路
 ---
 * 题目中明确说出flag的组成，所以按照顺序解密即可
 ## 三、尝试过程和结果记录
 ---
-* **CodeA**：社会主义价值观密码
-  -[编码解码工具请戳这里](https://ctf.bugku.com/tool/cvecode)
+* **CodeA**：社会主义价值观密码<br>
+  -[编码解码工具请戳这里](https://ctf.bugku.com/tool/cvecode)<br>
 
   解码得CodeA='富强民主文明和谐'
 
-* **CodeB**:猪圈密码
-  ![alt text](./image/什锦-猪圈密码.png)
+* **CodeB**:猪圈密码<br>
+  ![alt text](./image/什锦-猪圈密码.png)<br>
   对照解密即可得到：CodeB='pigissocutewhyyoukillpig'
 
-* **CodeC**:brainfuck密码
-  ![alt text](./image/什锦-brainfuck.png)
+* **CodeC**:brainfuck密码<br>
+  ![alt text](./image/什锦-brainfuck.png)<br>
 ```python
 memory_size = 8192
 memory = [0] * memory_size
