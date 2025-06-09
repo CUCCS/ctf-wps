@@ -1,6 +1,4 @@
-# [SWPUCTF 2022 新生赛]什锦
-
-### 基本信息
+## 基本信息
 ---
 * 题目名称：[SWPUCTF 2022 新生赛]什锦
 * 题目链接：https://www.nssctf.cn/problem/2644
