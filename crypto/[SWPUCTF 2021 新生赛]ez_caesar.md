@@ -1,4 +1,4 @@
-### 基本信息
+## 基本信息
 ---
 * 题目名称：[SWPUCTF 2021 新生赛]ez_caesar
 * 题目链接：https://www.nssctf.cn/problem/430
