@@ -1,4 +1,4 @@
-### 基本信息
+## 基本信息
 ---
 * 题目名称：[SDCTF 2022]Case64AR
 * 题目链接：https://www.nssctf.cn/problem/2378
