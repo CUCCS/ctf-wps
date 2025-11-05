@@ -2,16 +2,43 @@
 
 ## 真题复现
 
+- [厄了吗](https://www.nssctf.cn/problem/7228)
+- [辣卤客，我为你带来烩面啦！](https://www.nssctf.cn/problem/7163)
+- [昔涟的礼物](https://www.nssctf.cn/problem/7227)
+- [constraint](https://www.nssctf.cn/problem/7173)
+- [伊莫鸡](https://www.nssctf.cn/problem/7218)
+- [密钥危机](https://www.nssctf.cn/problem/7171)
 - [计小鸡的秘密](https://www.nssctf.cn/problem/7153)
+- [DNS Courier](https://www.nssctf.cn/problem/7174)
+- [ezmisc](https://www.nssctf.cn/problem/7115)
+- [eztalk](https://www.nssctf.cn/problem/7166)
 - [PHP签到](https://www.nssctf.cn/problem/7167)
 - [技能五子棋](https://www.nssctf.cn/problem/7165)
 - [守法公民](https://www.nssctf.cn/problem/7214)
 
 ## 官方 WP
 
+### PWN
+
+- [厄了吗](pwn/[GCCCTF 2025]厄了吗.md)
+- [辣卤客，我为你带来烩面啦！](pwn/[GCCCTF 2025]辣卤客，我为你带来烩面啦！.md)
+- [昔涟的礼物](pwn/[GCCCTF 2025]昔涟的礼物.md)
+
+### Reverse
+
+- [constraint](reverse/[GCCCTF 2025] constraint.md)
+
+### Crypto
+
+- [伊莫鸡](crypto/[GCCCTF 2025]伊莫鸡.md)
+- [密钥危机](crypto/[GCCCTF 2025]密钥危机.md)
+
 ### MISC
 
 - [计小鸡的秘密](misc/GCCCTF2025_计小鸡的秘密.md)
+- [DNS Courier](misc/GCCCTF2025_DNS_Courier.md)
+- [ezmisc](misc/GCCCTF2025_ezmisc.md)
+- [eztalk](misc/GCCCTF2025_eztalk.md)
 
 ### WEB
 
