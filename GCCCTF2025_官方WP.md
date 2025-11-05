@@ -20,18 +20,18 @@
 
 ### PWN
 
-- [厄了吗](pwn/[GCCCTF 2025]厄了吗.md)
-- [辣卤客，我为你带来烩面啦！](pwn/[GCCCTF 2025]辣卤客，我为你带来烩面啦！.md)
-- [昔涟的礼物](pwn/[GCCCTF 2025]昔涟的礼物.md)
+- [厄了吗](pwn/%5BGCCCTF%202025%5D厄了吗.md)
+- [辣卤客，我为你带来烩面啦！](pwn/%5BGCCCTF%202025%5D辣卤客，我为你带来烩面啦！.md)
+- [昔涟的礼物](pwn/%5BGCCCTF%202025%5D昔涟的礼物.md)
 
 ### Reverse
 
-- [constraint](reverse/[GCCCTF 2025] constraint.md)
+- [constraint](reverse/%5BGCCCTF%202025%5D%20constraint.md)
 
 ### Crypto
 
-- [伊莫鸡](crypto/[GCCCTF 2025]伊莫鸡.md)
-- [密钥危机](crypto/[GCCCTF 2025]密钥危机.md)
+- [伊莫鸡](crypto/%5BGCCCTF%202025%5D伊莫鸡.md)
+- [密钥危机](crypto/%5BGCCCTF%202025%5D密钥危机.md)
 
 ### MISC
 
@@ -42,6 +42,6 @@
 
 ### WEB
 
-- [PHP签到](web/[GCCCTF 2025]PHP签到.md)
-- [技能五子棋](web/[GCCCTF 2025]技能五子棋.md)
-- [守法公民](web/[GCCCTF 2025]守法公民.md)
+- [PHP签到](web/%5BGCCCTF%202025%5DPHP签到.md)
+- [技能五子棋](web/%5BGCCCTF%202025%5D技能五子棋.md)
+- [守法公民](web/%5BGCCCTF%202025%5D守法公民.md)
