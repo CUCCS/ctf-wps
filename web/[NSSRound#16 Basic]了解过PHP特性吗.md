@@ -67,7 +67,7 @@ if ($checker_1 && $checker_2 && $checker_3 && $checker_4) {
     例如，`"QNKCDZO"`的MD5值是`0e830400451993494058024219903391`，而`"240610708"`的MD5值是`0e462097431906509019562988736854`。
     需要注意两个参数会被`strrev`反转，因此我们需要传入反转后的值，即`ctype`传入`OZDCDKNQ`，`is_num`传入`807016042`。
     <p align="center">
-    <img src='images/[NSSRound_16 Basic]了解过PHP特性吗-md5_collision_bypass.png'>
+    <img src='images/%5BNSSRound_16 Basic%5D了解过PHP特性吗-md5_collision_bypass.png'>
     </p>
 
 3. `if (isset($_114) && intval($_114) > 114514 && strlen($_114) <= 3) { ... }`
@@ -76,19 +76,19 @@ if ($checker_1 && $checker_2 && $checker_3 && $checker_4) {
    但是我们可以利用PHP的类型转换特性，传入一个字符串如`"1e6"`，其整数值会被转换为`1000000`，从而绕过这个检查点。
    对于`$_514`，我们可以利用`is_numeric`函数的漏洞，传入一个大数字如`"99999999"`，并且在其最后加上字母或空字符`%00`以绕过。
    <p align="center">
-   <img src="images/[NSSRound_16 Basic]了解过PHP特性吗-scientific_notation_bypass.png">
+   <img src="images/%5BNSSRound_16 Basic%5D了解过PHP特性吗-scientific_notation_bypass.png">
    </p>
 
 4. `if (is_array($arr4y)) { ... }`
    这里检查`$arr4y`是否为数组，并且要求数组中元素不强等于`"NSS"`，同时将数组元素转换为整数，最后检查`array_search("NSS", $arr4y) === 0`。  
    注意到`array_search`第三个参数默认为`false`，表示使用宽松比较，因此我们可以传入一个数组如`[0]`，这样`array_search("NSS", $arr4y)`会返回`0`，从而绕过这个检查点。
    <p align="center">
-   <img src="images/[NSSRound_16 Basic]了解过PHP特性吗-array_search_bypass.png">
+   <img src="images/%5BNSSRound_16 Basic%5D了解过PHP特性吗-array_search_bypass.png">
    </p>
 
 传参获得如下提示
 <p align="center">
-<img src="images/[NSSRound_16 Basic]了解过PHP特性吗-rce_code_reveal.png">
+<img src="images/%5BNSSRound_16 Basic%5D了解过PHP特性吗-rce_code_reveal.png">
 </p>
 
 `Rc3_function.php`内容如下
@@ -120,7 +120,7 @@ function lambda_1($a) {
 ```
 执行后如下
 <p align="center">
-<img src="images/[NSSRound_16 Basic]了解过PHP特性吗-rce_ls_output.png">
+<img src="images/%5BNSSRound_16 Basic%5D了解过PHP特性吗-rce_ls_output.png">
 </p>
 可以看到成功执行了代码
 接下来尝试读取flag
@@ -128,7 +128,7 @@ function lambda_1($a) {
 shell=$a&nss=echo($a);}system('cat /flag.txt');//
 ```
 <p align="center">
-<img src="images/[NSSRound_16 Basic]了解过PHP特性吗-flag_cat_output.png">
+<img src="images/%5BNSSRound_16 Basic%5D了解过PHP特性吗-flag_cat_output.png">
 </p>
 
 ## 总结
