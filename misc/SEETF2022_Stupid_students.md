@@ -14,26 +14,26 @@
 
 - 使用 010Editor 打开 Report.pdf，确认文件头为：%PDF-1.3文件类型正确，那就是内部结构可能存在损坏。
 
-  ![Header](SEETF2022_Stupid_students/Header.png)
+  ![Header](images/SEETF2022_Stupid_students/Header.png)
 
 - 在 HexEditor 中搜索 /Root，发现 trailer 中 /Root 指向 26 0 obj，说明 26 0 obj 为文档的 Catalog 根节点。
 
-  ![Root](SEETF2022_Stupid_students/Root.png)
+  ![Root](images/SEETF2022_Stupid_students/Root.png)
 
 - 在 26 0 obj 中发现 /Pages 指向 2 0 obj，因此 2 0 obj 为页面树根节点（/Type /Pages）。
 
-  ![26_0_obj](SEETF2022_Stupid_students/26_0_obj.png)
+  ![26_0_obj](images/SEETF2022_Stupid_students/26_0_obj.png)
 
 - 继续查看 2 0 obj，其 /Kids 为：/Kids [ 1 0 R 12 0 R 22 0 R ]，说明该 PDF 包含 3 个页面对象：
   1 0 obj，12 0 obj，22 0 obj（**R** 是引用（Reference），检索需要替换成真正的数据结构 **obj**）
 
-  ![Kids](SEETF2022_Stupid_students/Kids.png)
+  ![Kids](images/SEETF2022_Stupid_students/Kids.png)
 
 - 根据 PDF 规范，/Type /Pages 节点必须包含 /Count 字段，表示其子页面节点的数量。
 
   当前 /Kids 中包含 3 个页面对象，但缺少 /Count，因此在 2 0 obj 中补充：/Count 3
 
-  ![2_0_obj](SEETF2022_Stupid_students/2_0_obj.png)
+  ![2_0_obj](images/SEETF2022_Stupid_students/2_0_obj.png)
 
 - 接下来依次检查 3 个页面对象：1 0 obj，12 0 obj，22 0 obj。
 
@@ -53,25 +53,25 @@
 
   1 0 obj
 
-  ![1_0_obj](SEETF2022_Stupid_students/1_0_obj.png)
+  ![1_0_obj](images/SEETF2022_Stupid_students/1_0_obj.png)
 
   12 0 obj
 
-  ![12_0_obj](SEETF2022_Stupid_students/12_0_obj.png)
+  ![12_0_obj](images/SEETF2022_Stupid_students/12_0_obj.png)
 
   22 0 obj
 
-  ![22_0_obj](SEETF2022_Stupid_students/22_0_obj.png)
+  ![22_0_obj](images/SEETF2022_Stupid_students/22_0_obj.png)
 
 - 依次补充完以后打开PDF，得到flag
 
-  ![flag](SEETF2022_Stupid_students/flag.png)
+  ![flag](images/SEETF2022_Stupid_students/flag.png)
 
 - flag：NSSCTF{1_l0v3_pdf_fil3s_27f80154b082e53f7a19b58f7061a6cf}
 
 ## 参考链接
 
-[PDF-Explained](https://zxyle.github.io/PDF-Explained/)
+[PDF-Explained](images/https://zxyle.github.io/PDF-Explained/)
 
 ## 笔记
 
@@ -85,7 +85,7 @@ PDF中的对象互相关联，组成一个树状结构，其根部是一个名�
 
 每个Page对象记录了一些基本信息（页面尺寸a4.etc），页面的具体信息记录在**Contents**和**Resources**对象中。Resources引用了排版每一页需要的各种资源（图片、字体）。每一页的注释封装在**Annots**中，与Page进行关联，所有Annots对象会被追加到PDF末尾形成一个新的PDF，所以给PDF做完注释以后阅读器会要求‘另存为’。
 
- ![map](SEETF2022_Stupid_students/map.png)
+ ![map](images/SEETF2022_Stupid_students/map.png)
 
 PDF 规范里：
 
@@ -151,6 +151,7 @@ PDF 规范里：
 - 010 Editor
 
   直接编辑 PDF 二进制,修补 `/Pages`、`/Kids`等
+
 
 
 
