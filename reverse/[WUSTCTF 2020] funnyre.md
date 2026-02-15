@@ -89,15 +89,15 @@ CPU看这些指令是没问题的——照样执行、跳过或者忽略。
 
 1. 查壳后发现，无壳64位
 
-   ![image-20250528160101742](./images/[WUSTCTF 2020] funnyre_1.png)
+   ![image-20250528160101742](./images/%5bWUSTCTF%202020%5d%20funnyre_1.png)
 
 2. 丢进IDA里面，这个时候你就会发现，在main函数里面按下F5里面就会报错（这不是F5背叛了你，首先想到会不会是花指令使得坏）
 
-   ![image-20250528160302240](./images/[WUSTCTF 2020] funnyre_2.png)
+   ![image-20250528160302240](./images/%5bWUSTCTF%202020%5d%20funnyre_2.png)
 
 3. 按下空格键进入文本模式，寻找发现有处明显标红的地方
 
-   ![image-20250528160614303](./images/[WUSTCTF 2020] funnyre_3.png)
+   ![image-20250528160614303](./images/%5bWUSTCTF%202020%5d%20funnyre_3.png)
 
    显然这部分就是花指令了，接下来花指令的解决就需要分析汇编代码了，观察到`jz` 和 `jnz` 跳到同一地址，也就是说**不管ZF（零标志）是0还是1，都会跳转**，也就是说这两条指令的效果是：**无条件跳转**！
 
@@ -108,17 +108,17 @@ CPU看这些指令是没问题的——照样执行、跳过或者忽略。
 
    点击改地址
 
-   ![image-20250528161418955](./images/[WUSTCTF 2020] funnyre_4.png)
+   ![image-20250528161418955](./images/%5bWUSTCTF%202020%5d%20funnyre_4.png)
 
-   ![image-20250528161456554](./images/[WUSTCTF 2020] funnyre_5.png)
+   ![image-20250528161456554](./images/%5bWUSTCTF%202020%5d%20funnyre_5.png)
 
 5. 一共有三处要创建函数。到这里程序就修复好了，便可以F5了
 
-   ![[WUSTCTF 2020] funnyre_7](./images/[WUSTCTF 2020] funnyre_7.png)
+   ![[WUSTCTF 2020] funnyre_7](./images/%5bWUSTCTF%202020%5d%20funnyre_7.png)
 
    这里上千行的代码，总结就是进行了数次xor操作，又进行了数次移位操作，最后得到4025c0处的值
 
-   ![image-20250528161912312](./images/[WUSTCTF 2020] funnyre_6.png)
+   ![image-20250528161912312](./images/%5bWUSTCTF%202020%5d%20funnyre_6.png)
 
 6. 所以我选择使用angr进行暴力求解。脚本(来自官方）如下：
 
